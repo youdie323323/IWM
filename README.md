@@ -8,7 +8,7 @@ You can download from `https://go.dev/dl/`
 #### All complete, ready to code.
 
 # Usage
-To use this tool, Basically edit the main function in main.go.  
+To use this tool, Basically edit the main function in `IWM_main.go`  
 You can view `Api.md` or visit `*_test.go` to know tool usage.  
 If you have any questions or issue, please contact me on discord: `m3ow3r`
 
