@@ -16,4 +16,5 @@ If you have any questions or issue, please contact me on discord: `m3ow3r`
 Rewrite some code  
 Add more event  
 Rewrite const  
-More xml tag
+More xml tag  
+Fix midi track bug
