@@ -11,3 +11,9 @@ You can download from `https://go.dev/dl/`
 To use this tool, Basically edit the main function in main.go.  
 You can view `Api.md` or visit `*_test.go` to know tool usage.  
 If you have any questions or issue, please contact me on discord: `m3ow3r`
+
+# TODO
+Rewrite some code  
+Add more event  
+Rewrite const  
+More xml tag
