@@ -10,7 +10,7 @@ You can download from `https://go.dev/dl/`
 # Usage
 To use this tool, Basically edit the main function in `IWM_main.go`  
 You can view `Api.md` or visit `*_test.go` to know tool usage.  
-To run. type `go run main.go` or `go run .`  
+To run. type `go run IWm_main.go` or `go run .`  
 If you have any questions or issue, please contact me on discord: `m3ow3r`  
 
 # TODO
