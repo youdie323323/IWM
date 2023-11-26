@@ -1,5 +1,5 @@
 
-# Api Reference
+# Midi
 
 ```Func
   midi()
@@ -21,7 +21,7 @@ Return Objects, Count, error
 #### Usage: midi[[]*Object](filepath, fps, track, volume, x, y, MinusOffset, []EventInner{})
 ###
 
-# THIS POSSIBLE TO CRASH YOUR IWM, BE CAREFUL
+# Image - THIS POSSIBLE TO CRASH YOUR IWM, BE CAREFUL
 ```Func
   Image()
 ```
