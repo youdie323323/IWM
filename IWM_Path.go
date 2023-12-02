@@ -6,6 +6,8 @@ import (
 	"math"
 )
 
+/* Special thanks: onbo */
+
 func HexadecimalToFloat64(f string) (float64, error) {
 	byteSlices := make([]byte, 8)
 	for bytes := 0; bytes < 8; bytes++ {
