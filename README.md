@@ -11,7 +11,7 @@ You can download from `https://go.dev/dl/`
 To use this tool, Basically edit the main function in `IWM_main.go`  
 You can view `Api.md` or visit `*_test.go` to know tool usage.  
 To run. type `go run IWm_main.go` or `go run .` in terminal  
-If you have any questions or issue, please contact me on discord: `m3ow3r`  
+If you have any questions or issue, please contact me on discord: `m3ow3r` or open issue  
 
 # TODO
 Rewrite some code  
