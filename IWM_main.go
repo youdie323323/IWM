@@ -3,6 +3,9 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
+	"log"
+	"os"
+	"path/filepath"
 )
 
 type Object struct {
@@ -51,14 +54,24 @@ func NewObject[T Block | int](x int, y int, ObjectType T, params []Param) *Objec
 }
 
 func (t *Object) BuildXMLObject() string {
-	output, err := xml.Marshal(t)
+	buf, err := xml.Marshal(t)
 	if err != nil {
 		fmt.Printf("error: %v\n", err)
 	}
-	return string(output)
+	return string(buf)
 }
 
-//your code here
 func main() {
-	
+	o, n, err := Bright[[]*Object](filepath.Join("assets", "nerd.png"), 810, 624)
+	if err != nil {
+		fmt.Printf("%s", err)
+		return
+	}
+	file, err := os.OpenFile(fmt.Sprintf("numobject=%d.txt", n), os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0666)
+	if err != nil {
+		log.Fatal("Cannot create file", err)
+		return
+	}
+	defer file.Close()
+	file.WriteString(BuildAllObject(o))
 }

@@ -12,6 +12,10 @@ func (t *Object) AppendTag(slot []Slots) {
 	t.Obj = append(t.Obj, slot...) // タグを追加
 }
 
+func (t *Object) AppendParam(param []Param) {
+	t.Param = append(t.Param, param...)
+}
+
 type IWMEvent struct{}
 
 // OnTimerEvent will make timer event

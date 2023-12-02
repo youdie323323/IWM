@@ -11,8 +11,8 @@ import (
 	"strings"
 )
 
-func rgbToGameColor(r, g, b uint32) string {
-	return fmt.Sprintf("%d", (b>>8)<<16|(g>>8)<<8|(r>>8))
+func RGBtoIWMBlend(r, g, b uint32) uint32 {
+	return (b>>8)<<16 | (g>>8)<<8 | (r >> 8)
 }
 
 func mostFrequentColor(img image.Image, minX, minY, maxX, maxY int) string {
@@ -20,7 +20,7 @@ func mostFrequentColor(img image.Image, minX, minY, maxX, maxY int) string {
 	for y := minY; y < maxY; y++ {
 		for x := minX; x < maxX; x++ {
 			r, g, b, _ := img.At(x, y).RGBA()
-			t := rgbToGameColor(r, g, b)
+			t := fmt.Sprintf("%d", RGBtoIWMBlend(r, g, b))
 			if t != "0" {
 				colorMap[t]++
 			}
