@@ -19,6 +19,7 @@
 
 Return Objects, Count, error
 #### Usage: midi[[]*Object](filepath, fps, track, volume, x, y, MinusOffset, []EventInner{})
+#### Example: `IWM_Midi2Iwm_test.go`
 ###
 
 # Image - THIS POSSIBLE TO CRASH YOUR IWM, BE CAREFUL
@@ -38,3 +39,20 @@ Return Objects, Count, error
 
 Return Objects, Count, error
 #### Usage: Image[ObjectsGroup](ImagePath, width, height, make([]int, 0), Scale, nil)
+#### Example: `IWM_Image2Object_test.go`
+
+# Bright
+```Func
+  Bright()
+```
+
+#### Convert image into IWM (using bright)
+
+|    Arg    | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+|    `ImagePath`    | `string` | **Required**. FilePath     |
+|   `width, height`   | `int` | **Required**. Size (810, 624)    |
+
+Return Objects, Count, error
+#### Usage: Bright[[]*Object](ImagePath, width, height)
+#### Example: `IWM_Image2Bright_test.go`
